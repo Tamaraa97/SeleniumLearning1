@@ -1,7 +1,6 @@
 package test;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,6 +24,10 @@ public static void main(String[] args) {
 		//uzima title sa google i ispisuje google
 		
 		driver.navigate().to("https://www.youtube.com");
+		title =  driver.getTitle();
+		System.out.println(title);
+		
+		driver.navigate().to("https://itbootcamp.rs/");
 		title =  driver.getTitle();
 		System.out.println(title);
 		
